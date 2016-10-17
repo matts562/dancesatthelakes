@@ -1,0 +1,251 @@
+/* Embedded Fonts */
+
+@font-face {
+	font-family: bodoni;
+	src:url(../fonts/bodoni_72.ttc);
+}
+
+
+
+
+/* Container Items */
+
+body,html {
+	height: 100%;
+}
+
+#logo {
+	position: absolute;
+	top: 0px;
+	background: url("../images/logo.gif");
+	width: 100px;
+	height: 100px;
+	margin-top: 15px;
+	margin-left: 15px;
+	opacity: .2;
+}
+
+
+@-webkit-keyframes title_fade {
+	0% { opacity: 0;}
+	25% { opacity: 0;}
+	50% { opacity: 50;}
+	100% { opacity: 100;}
+}
+
+#title {
+	background:url("../images/title.png") no-repeat fixed center;
+	background-size: 100%;
+	width: 900px;
+	height: 800px;
+	position: absolute;
+	left: 50%;
+	top: 50px;
+	margin-left: -450px;
+	opacity: 1;
+	-webkit-animation: title_fade 5s;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation: title_fade 5s;
+	-moz-animation-fill-mode: forwards;
+	-animation: title_fade 5s;
+	-animation-fill-mode: forwards;
+
+}
+
+
+#box {
+	width: 800px;
+	height: 489px;
+	border: solid blue 0px;
+	position: fixed;
+	left: 20%;
+	top: 120px;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.line {
+	border-left: 3px #e0a37b solid;
+	height: 850px;
+	width: 0px;
+	position: absolute;
+	top: -9999px;
+	right: -30%;
+
+	-webkit-animation: linedrop 8s infinite;
+	cubic-bezier(.39,.4,.3,.88);
+	animation-delay: 2s;
+
+
+	-webkit-transform: rotate(55deg);
+	-moz-transform: rotate(55deg);
+	-ms-transform: rotate(55deg);
+}
+
+@-webkit-keyframes linedrop {
+	0% { opacity: 0; top: -600px; right: -25%; }
+	50% { opacity: 1; top: -180px; right: 50%; }
+	100% { opacity: 0; top: 300px; right: 135%;}
+}
+
+
+#banner {
+	position: absolute;
+	top: 100px;
+	left: 48%;
+	width: 130px;
+	height: 35px;
+	margin-left: -50px;
+	border: 3px #e0a37b solid;
+}
+
+.annual {
+	font-family: Bebas Neue;
+	font-size: 22px;
+	font-weight: bolder;
+	text-align: center;
+	margin-top: 10px;
+
+}
+
+#dancer{
+	height: 100%;
+	top: -20%;
+	z-index: -3;
+	background: url("../images/dancer.jpg") no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+}
+
+
+#info {
+	padding-top: 80px;
+	width: 1030px;
+	height: 210px;
+	margin: auto;
+	position: relative;
+	z-index: 3;
+	background-color: white;
+	border: 0px #e0a37b solid;
+}
+
+#left {
+	width: 500px;
+	float: left;
+	margin-top: -10px;
+}
+
+#right {
+	width: 500px;
+	margin-left: 20px;
+	float: left;
+}
+
+
+/* Paragraph Styles */
+
+
+.text {
+	font-family: Bebas Neue;
+	font-weight: normal;
+	width: 400px;
+	font-size: 16pt;
+	line-height: 20pt;
+	color: black;
+	letter-spacing: .02em;
+	text-rendering: optimizeLegibility;
+	position: relative;
+	text-align: left;
+	left: -40px;
+	vertical-align: center;
+	top: 55px;
+
+
+
+}
+
+.text2 {
+	font-family: Bebas Neue;
+	font-weight: lighter;
+	width: 400px;
+	font-size: 16pt;
+	line-height: 20pt;
+	color: black;
+	letter-spacing: .02em;
+	text-rendering: optimizeLegibility;
+	position: relative;
+	text-align: left;
+	left: -40px;
+	vertical-align: center;
+	top: 54px;
+
+
+}
+
+.text3 {
+	font-family: Bebas Neue;
+	font-weight: bolder;
+	width: 280px;
+	font-size: 22pt;
+	line-height: 24pt;
+	color: black;
+	letter-spacing: .02em;
+	text-rendering: optimizeLegibility;
+	position: relative;
+	text-align: right;
+	position: relative;
+	left: 170px;
+	top: -40px;
+
+	border: 0px red solid;
+
+
+}
+
+.text4 {
+	font-family: Bebas Neue;
+	font-weight: lighter;
+	width: 280px;
+	font-size: 22pt;
+	line-height: 24pt;
+	color: black;
+	letter-spacing: .02em;
+	text-rendering: optimizeLegibility;
+	position: relative;
+	text-align: right;
+	vertical-align: center;
+	position: relative;
+	left: 170px;
+	top: -40px;
+
+	border: 0px red solid;
+}
+
+.date {
+	font-family: bodoni;
+	font-weight: normal;
+	width: 450px;
+	font-size: 80pt;
+	color: #e0a37b;
+	letter-spacing: .02em;
+	text-rendering: optimizeLegibility;
+	position: relative;
+	text-align: left;
+	position: relative;
+	left: 30%;
+	top: -40px;	
+}
+
+#stripes {
+	height: 400px;
+	width: 100%;
+	bottom: 80px;
+	position: relative;
+	float: left;
+	left: 0px;
+	border: 0px blue solid;
+	background: url("../images/lines.png") no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	z-index: 2;
+}
